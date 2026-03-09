@@ -70,9 +70,11 @@
             groupBoxPlayer1.Controls.Add(GroupBoxDragonType1);
             groupBoxPlayer1.Controls.Add(LabelDragonName1);
             groupBoxPlayer1.Controls.Add(LabelPlayerName1);
-            groupBoxPlayer1.Location = new Point(12, 12);
+            groupBoxPlayer1.Location = new Point(14, 16);
+            groupBoxPlayer1.Margin = new Padding(3, 4, 3, 4);
             groupBoxPlayer1.Name = "groupBoxPlayer1";
-            groupBoxPlayer1.Size = new Size(454, 381);
+            groupBoxPlayer1.Padding = new Padding(3, 4, 3, 4);
+            groupBoxPlayer1.Size = new Size(519, 508);
             groupBoxPlayer1.TabIndex = 0;
             groupBoxPlayer1.TabStop = false;
             groupBoxPlayer1.Text = "Player 1";
@@ -80,9 +82,10 @@
             // 
             // SaveButton1
             // 
-            SaveButton1.Location = new Point(39, 303);
+            SaveButton1.Location = new Point(45, 404);
+            SaveButton1.Margin = new Padding(3, 4, 3, 4);
             SaveButton1.Name = "SaveButton1";
-            SaveButton1.Size = new Size(366, 33);
+            SaveButton1.Size = new Size(418, 44);
             SaveButton1.TabIndex = 12;
             SaveButton1.Text = "SAVE";
             SaveButton1.UseVisualStyleBackColor = true;
@@ -90,16 +93,18 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(110, 62);
+            textBox1.Location = new Point(126, 83);
+            textBox1.Margin = new Padding(3, 4, 3, 4);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(318, 23);
+            textBox1.Size = new Size(363, 27);
             textBox1.TabIndex = 11;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(110, 34);
+            textBox2.Location = new Point(126, 45);
+            textBox2.Margin = new Padding(3, 4, 3, 4);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(318, 23);
+            textBox2.Size = new Size(363, 27);
             textBox2.TabIndex = 10;
             // 
             // GroupBoxDragonType1
@@ -108,9 +113,11 @@
             GroupBoxDragonType1.Controls.Add(RadioWindDragon1);
             GroupBoxDragonType1.Controls.Add(RadioIceDragon1);
             GroupBoxDragonType1.Controls.Add(RadioFireDragon1);
-            GroupBoxDragonType1.Location = new Point(39, 122);
+            GroupBoxDragonType1.Location = new Point(45, 163);
+            GroupBoxDragonType1.Margin = new Padding(3, 4, 3, 4);
             GroupBoxDragonType1.Name = "GroupBoxDragonType1";
-            GroupBoxDragonType1.Size = new Size(366, 166);
+            GroupBoxDragonType1.Padding = new Padding(3, 4, 3, 4);
+            GroupBoxDragonType1.Size = new Size(418, 221);
             GroupBoxDragonType1.TabIndex = 9;
             GroupBoxDragonType1.TabStop = false;
             GroupBoxDragonType1.Text = "Dragon Type";
@@ -119,9 +126,10 @@
             // RadioEarthDragon1
             // 
             RadioEarthDragon1.AutoSize = true;
-            RadioEarthDragon1.Location = new Point(19, 110);
+            RadioEarthDragon1.Location = new Point(22, 147);
+            RadioEarthDragon1.Margin = new Padding(3, 4, 3, 4);
             RadioEarthDragon1.Name = "RadioEarthDragon1";
-            RadioEarthDragon1.Size = new Size(94, 19);
+            RadioEarthDragon1.Size = new Size(118, 24);
             RadioEarthDragon1.TabIndex = 3;
             RadioEarthDragon1.TabStop = true;
             RadioEarthDragon1.Text = "Earth Dragon";
@@ -130,9 +138,10 @@
             // RadioWindDragon1
             // 
             RadioWindDragon1.AutoSize = true;
-            RadioWindDragon1.Location = new Point(19, 85);
+            RadioWindDragon1.Location = new Point(22, 113);
+            RadioWindDragon1.Margin = new Padding(3, 4, 3, 4);
             RadioWindDragon1.Name = "RadioWindDragon1";
-            RadioWindDragon1.Size = new Size(95, 19);
+            RadioWindDragon1.Size = new Size(119, 24);
             RadioWindDragon1.TabIndex = 2;
             RadioWindDragon1.TabStop = true;
             RadioWindDragon1.Text = "Wind Dragon";
@@ -142,9 +151,10 @@
             // RadioIceDragon1
             // 
             RadioIceDragon1.AutoSize = true;
-            RadioIceDragon1.Location = new Point(19, 60);
+            RadioIceDragon1.Location = new Point(22, 80);
+            RadioIceDragon1.Margin = new Padding(3, 4, 3, 4);
             RadioIceDragon1.Name = "RadioIceDragon1";
-            RadioIceDragon1.Size = new Size(82, 19);
+            RadioIceDragon1.Size = new Size(103, 24);
             RadioIceDragon1.TabIndex = 1;
             RadioIceDragon1.TabStop = true;
             RadioIceDragon1.Text = "Ice Dragon";
@@ -153,9 +163,10 @@
             // RadioFireDragon1
             // 
             RadioFireDragon1.AutoSize = true;
-            RadioFireDragon1.Location = new Point(19, 35);
+            RadioFireDragon1.Location = new Point(22, 47);
+            RadioFireDragon1.Margin = new Padding(3, 4, 3, 4);
             RadioFireDragon1.Name = "RadioFireDragon1";
-            RadioFireDragon1.Size = new Size(86, 19);
+            RadioFireDragon1.Size = new Size(108, 24);
             RadioFireDragon1.TabIndex = 0;
             RadioFireDragon1.TabStop = true;
             RadioFireDragon1.Text = "Fire Dragon";
@@ -164,9 +175,9 @@
             // LabelDragonName1
             // 
             LabelDragonName1.AutoSize = true;
-            LabelDragonName1.Location = new Point(6, 59);
+            LabelDragonName1.Location = new Point(7, 79);
             LabelDragonName1.Name = "LabelDragonName1";
-            LabelDragonName1.Size = new Size(84, 15);
+            LabelDragonName1.Size = new Size(106, 20);
             LabelDragonName1.TabIndex = 3;
             LabelDragonName1.Text = "Dragon Name:";
             LabelDragonName1.Click += LabelDragonName1_Click;
@@ -174,9 +185,9 @@
             // LabelPlayerName1
             // 
             LabelPlayerName1.AutoSize = true;
-            LabelPlayerName1.Location = new Point(6, 34);
+            LabelPlayerName1.Location = new Point(7, 45);
             LabelPlayerName1.Name = "LabelPlayerName1";
-            LabelPlayerName1.Size = new Size(77, 15);
+            LabelPlayerName1.Size = new Size(96, 20);
             LabelPlayerName1.TabIndex = 2;
             LabelPlayerName1.Text = "Player Name:";
             LabelPlayerName1.Click += label1_Click;
@@ -189,9 +200,11 @@
             groupBoxPlayer2.Controls.Add(textBox4);
             groupBoxPlayer2.Controls.Add(LabelDragonName2);
             groupBoxPlayer2.Controls.Add(LabelPlayerName2);
-            groupBoxPlayer2.Location = new Point(488, 12);
+            groupBoxPlayer2.Location = new Point(558, 16);
+            groupBoxPlayer2.Margin = new Padding(3, 4, 3, 4);
             groupBoxPlayer2.Name = "groupBoxPlayer2";
-            groupBoxPlayer2.Size = new Size(454, 381);
+            groupBoxPlayer2.Padding = new Padding(3, 4, 3, 4);
+            groupBoxPlayer2.Size = new Size(519, 508);
             groupBoxPlayer2.TabIndex = 1;
             groupBoxPlayer2.TabStop = false;
             groupBoxPlayer2.Text = "Player 2";
@@ -199,9 +212,10 @@
             // 
             // SaveButton2
             // 
-            SaveButton2.Location = new Point(39, 303);
+            SaveButton2.Location = new Point(45, 404);
+            SaveButton2.Margin = new Padding(3, 4, 3, 4);
             SaveButton2.Name = "SaveButton2";
-            SaveButton2.Size = new Size(366, 33);
+            SaveButton2.Size = new Size(418, 44);
             SaveButton2.TabIndex = 13;
             SaveButton2.Text = "SAVE";
             SaveButton2.UseVisualStyleBackColor = true;
@@ -212,9 +226,11 @@
             GroupBoxDragonType2.Controls.Add(RadioWindDragon2);
             GroupBoxDragonType2.Controls.Add(RadioIceDragon2);
             GroupBoxDragonType2.Controls.Add(RadioFireDragon2);
-            GroupBoxDragonType2.Location = new Point(39, 122);
+            GroupBoxDragonType2.Location = new Point(45, 163);
+            GroupBoxDragonType2.Margin = new Padding(3, 4, 3, 4);
             GroupBoxDragonType2.Name = "GroupBoxDragonType2";
-            GroupBoxDragonType2.Size = new Size(366, 166);
+            GroupBoxDragonType2.Padding = new Padding(3, 4, 3, 4);
+            GroupBoxDragonType2.Size = new Size(418, 221);
             GroupBoxDragonType2.TabIndex = 8;
             GroupBoxDragonType2.TabStop = false;
             GroupBoxDragonType2.Text = "Dragon Type";
@@ -222,9 +238,10 @@
             // RadioEarthDragon2
             // 
             RadioEarthDragon2.AutoSize = true;
-            RadioEarthDragon2.Location = new Point(19, 110);
+            RadioEarthDragon2.Location = new Point(22, 147);
+            RadioEarthDragon2.Margin = new Padding(3, 4, 3, 4);
             RadioEarthDragon2.Name = "RadioEarthDragon2";
-            RadioEarthDragon2.Size = new Size(94, 19);
+            RadioEarthDragon2.Size = new Size(118, 24);
             RadioEarthDragon2.TabIndex = 7;
             RadioEarthDragon2.TabStop = true;
             RadioEarthDragon2.Text = "Earth Dragon";
@@ -233,9 +250,10 @@
             // RadioWindDragon2
             // 
             RadioWindDragon2.AutoSize = true;
-            RadioWindDragon2.Location = new Point(19, 85);
+            RadioWindDragon2.Location = new Point(22, 113);
+            RadioWindDragon2.Margin = new Padding(3, 4, 3, 4);
             RadioWindDragon2.Name = "RadioWindDragon2";
-            RadioWindDragon2.Size = new Size(95, 19);
+            RadioWindDragon2.Size = new Size(119, 24);
             RadioWindDragon2.TabIndex = 6;
             RadioWindDragon2.TabStop = true;
             RadioWindDragon2.Text = "Wind Dragon";
@@ -244,9 +262,10 @@
             // RadioIceDragon2
             // 
             RadioIceDragon2.AutoSize = true;
-            RadioIceDragon2.Location = new Point(19, 60);
+            RadioIceDragon2.Location = new Point(22, 80);
+            RadioIceDragon2.Margin = new Padding(3, 4, 3, 4);
             RadioIceDragon2.Name = "RadioIceDragon2";
-            RadioIceDragon2.Size = new Size(82, 19);
+            RadioIceDragon2.Size = new Size(103, 24);
             RadioIceDragon2.TabIndex = 5;
             RadioIceDragon2.TabStop = true;
             RadioIceDragon2.Text = "Ice Dragon";
@@ -255,9 +274,10 @@
             // RadioFireDragon2
             // 
             RadioFireDragon2.AutoSize = true;
-            RadioFireDragon2.Location = new Point(19, 35);
+            RadioFireDragon2.Location = new Point(22, 47);
+            RadioFireDragon2.Margin = new Padding(3, 4, 3, 4);
             RadioFireDragon2.Name = "RadioFireDragon2";
-            RadioFireDragon2.Size = new Size(86, 19);
+            RadioFireDragon2.Size = new Size(108, 24);
             RadioFireDragon2.TabIndex = 4;
             RadioFireDragon2.TabStop = true;
             RadioFireDragon2.Text = "Fire Dragon";
@@ -266,42 +286,45 @@
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(110, 62);
+            textBox3.Location = new Point(126, 83);
+            textBox3.Margin = new Padding(3, 4, 3, 4);
             textBox3.Name = "textBox3";
-            textBox3.Size = new Size(318, 23);
+            textBox3.Size = new Size(363, 27);
             textBox3.TabIndex = 7;
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(110, 34);
+            textBox4.Location = new Point(126, 45);
+            textBox4.Margin = new Padding(3, 4, 3, 4);
             textBox4.Name = "textBox4";
-            textBox4.Size = new Size(318, 23);
+            textBox4.Size = new Size(363, 27);
             textBox4.TabIndex = 6;
             // 
             // LabelDragonName2
             // 
             LabelDragonName2.AutoSize = true;
-            LabelDragonName2.Location = new Point(6, 59);
+            LabelDragonName2.Location = new Point(7, 79);
             LabelDragonName2.Name = "LabelDragonName2";
-            LabelDragonName2.Size = new Size(84, 15);
+            LabelDragonName2.Size = new Size(106, 20);
             LabelDragonName2.TabIndex = 4;
             LabelDragonName2.Text = "Dragon Name:";
             // 
             // LabelPlayerName2
             // 
             LabelPlayerName2.AutoSize = true;
-            LabelPlayerName2.Location = new Point(6, 34);
+            LabelPlayerName2.Location = new Point(7, 45);
             LabelPlayerName2.Name = "LabelPlayerName2";
-            LabelPlayerName2.Size = new Size(77, 15);
+            LabelPlayerName2.Size = new Size(96, 20);
             LabelPlayerName2.TabIndex = 3;
             LabelPlayerName2.Text = "Player Name:";
             LabelPlayerName2.Click += label2_Click;
             // 
             // ButtonStartGame
             // 
-            ButtonStartGame.Location = new Point(12, 401);
+            ButtonStartGame.Location = new Point(14, 535);
+            ButtonStartGame.Margin = new Padding(3, 4, 3, 4);
             ButtonStartGame.Name = "ButtonStartGame";
-            ButtonStartGame.Size = new Size(930, 37);
+            ButtonStartGame.Size = new Size(1063, 49);
             ButtonStartGame.TabIndex = 2;
             ButtonStartGame.Text = "START GAME";
             ButtonStartGame.UseVisualStyleBackColor = true;
@@ -309,9 +332,9 @@
             // LabelDragonStats
             // 
             LabelDragonStats.AutoSize = true;
-            LabelDragonStats.Location = new Point(965, 9);
+            LabelDragonStats.Location = new Point(1103, 12);
             LabelDragonStats.Name = "LabelDragonStats";
-            LabelDragonStats.Size = new Size(77, 15);
+            LabelDragonStats.Size = new Size(98, 20);
             LabelDragonStats.TabIndex = 3;
             LabelDragonStats.Text = "Dragon Stats:";
             LabelDragonStats.Click += label1_Click_1;
@@ -319,44 +342,44 @@
             // IceDragonInfoLabel
             // 
             IceDragonInfoLabel.AutoSize = true;
-            IceDragonInfoLabel.Location = new Point(965, 33);
+            IceDragonInfoLabel.Location = new Point(1103, 44);
             IceDragonInfoLabel.Name = "IceDragonInfoLabel";
-            IceDragonInfoLabel.Size = new Size(137, 75);
+            IceDragonInfoLabel.Size = new Size(176, 100);
             IceDragonInfoLabel.TabIndex = 4;
             IceDragonInfoLabel.Text = "Ice Dragon\r\n30 HP\r\n4 Attack Damage\r\n9 Special Attack Damage\r\n5 Block Damage";
             // 
             // FireDragonInfoLabel
             // 
             FireDragonInfoLabel.AutoSize = true;
-            FireDragonInfoLabel.Location = new Point(965, 120);
+            FireDragonInfoLabel.Location = new Point(1103, 160);
             FireDragonInfoLabel.Name = "FireDragonInfoLabel";
-            FireDragonInfoLabel.Size = new Size(143, 75);
+            FireDragonInfoLabel.Size = new Size(184, 100);
             FireDragonInfoLabel.TabIndex = 5;
             FireDragonInfoLabel.Text = "Fire Dragon\r\n20 HP\r\n5 Attack Damage\r\n12 Special Attack Damage\r\n4 Block Damage\r\n";
             // 
             // EarthDragonInfoLabel
             // 
             EarthDragonInfoLabel.AutoSize = true;
-            EarthDragonInfoLabel.Location = new Point(965, 207);
+            EarthDragonInfoLabel.Location = new Point(1103, 276);
             EarthDragonInfoLabel.Name = "EarthDragonInfoLabel";
-            EarthDragonInfoLabel.Size = new Size(137, 75);
+            EarthDragonInfoLabel.Size = new Size(176, 100);
             EarthDragonInfoLabel.TabIndex = 6;
             EarthDragonInfoLabel.Text = "Earth Dragon\r\n50 HP\r\n2 Attack Damage\r\n5 Special Attack Damage\r\n4 Block Damage\r\n";
             // 
             // WindDragonInfoLabel
             // 
             WindDragonInfoLabel.AutoSize = true;
-            WindDragonInfoLabel.Location = new Point(965, 295);
+            WindDragonInfoLabel.Location = new Point(1103, 393);
             WindDragonInfoLabel.Name = "WindDragonInfoLabel";
-            WindDragonInfoLabel.Size = new Size(137, 75);
+            WindDragonInfoLabel.Size = new Size(176, 100);
             WindDragonInfoLabel.TabIndex = 7;
             WindDragonInfoLabel.Text = "Wind Dragon\r\n40 HP\r\n3 Attack Damage\r\n7 Special Attack Damage\r\n5 Block Damage\r\n";
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1125, 450);
+            ClientSize = new Size(1304, 600);
             Controls.Add(WindDragonInfoLabel);
             Controls.Add(EarthDragonInfoLabel);
             Controls.Add(FireDragonInfoLabel);
@@ -365,6 +388,7 @@
             Controls.Add(ButtonStartGame);
             Controls.Add(groupBoxPlayer2);
             Controls.Add(groupBoxPlayer1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
             Text = "DRAGON BATTLE!";
             Load += Form1_Load;

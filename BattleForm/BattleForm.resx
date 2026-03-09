@@ -117,88 +117,324 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="GroupBoxAttacker.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
-  </data>
-  <data name="GroupBoxAttacker.Size" type="System.Drawing.Size, System.Drawing">
-    <value>221, 207</value>
-  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="GroupBoxAttacker.TabIndex" type="System.Int32, mscorlib">
+  <data name="PlayerNameLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="PlayerNameLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 22</value>
+  </data>
+  <data name="PlayerNameLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 20</value>
+  </data>
+  <data name="PlayerNameLabel.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="GroupBoxAttacker.Text" xml:space="preserve">
-    <value>Attacker</value>
+  <data name="PlayerNameLabel.Text" xml:space="preserve">
+    <value>Player Name</value>
   </data>
-  <data name="&gt;&gt;GroupBoxAttacker.Name" xml:space="preserve">
-    <value>GroupBoxAttacker</value>
+  <data name="&gt;&gt;PlayerNameLabel.Name" xml:space="preserve">
+    <value>PlayerNameLabel</value>
   </data>
-  <data name="&gt;&gt;GroupBoxAttacker.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;PlayerNameLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;GroupBoxAttacker.Parent" xml:space="preserve">
+  <data name="&gt;&gt;PlayerNameLabel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;GroupBoxAttacker.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;PlayerNameLabel.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
-  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>253, 66</value>
+  <data name="DragonNameLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>221, 108</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="DragonNameLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
+  <data name="DragonNameLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>111, 22</value>
+  </data>
+  <data name="DragonNameLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 20</value>
+  </data>
+  <data name="DragonNameLabel.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="groupBox2.Text" xml:space="preserve">
-    <value>groupBox2</value>
+  <data name="DragonNameLabel.Text" xml:space="preserve">
+    <value>Dragon Name</value>
   </data>
-  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
-    <value>groupBox2</value>
+  <data name="&gt;&gt;DragonNameLabel.Name" xml:space="preserve">
+    <value>DragonNameLabel</value>
   </data>
-  <data name="&gt;&gt;groupBox2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;DragonNameLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;DragonNameLabel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;DragonNameLabel.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
-  <data name="groupBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 236</value>
+  <data name="DragonHPLabel1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="groupBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>462, 185</value>
+  <data name="DragonHPLabel1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 18pt</value>
   </data>
-  <data name="groupBox3.TabIndex" type="System.Int32, mscorlib">
+  <data name="DragonHPLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 58</value>
+  </data>
+  <data name="DragonHPLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 41</value>
+  </data>
+  <data name="DragonHPLabel1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="groupBox3.Text" xml:space="preserve">
-    <value>groupBox3</value>
+  <data name="DragonHPLabel1.Text" xml:space="preserve">
+    <value>HP:</value>
   </data>
-  <data name="&gt;&gt;groupBox3.Name" xml:space="preserve">
-    <value>groupBox3</value>
+  <data name="&gt;&gt;DragonHPLabel1.Name" xml:space="preserve">
+    <value>DragonHPLabel1</value>
   </data>
-  <data name="&gt;&gt;groupBox3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;DragonHPLabel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;groupBox3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;DragonHPLabel1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;groupBox3.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;DragonHPLabel1.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="AttackButton1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 113</value>
+  </data>
+  <data name="AttackButton1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 55</value>
+  </data>
+  <data name="AttackButton1.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="AttackButton1.Text" xml:space="preserve">
+    <value>Attack</value>
+  </data>
+  <data name="&gt;&gt;AttackButton1.Name" xml:space="preserve">
+    <value>AttackButton1</value>
+  </data>
+  <data name="&gt;&gt;AttackButton1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;AttackButton1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;AttackButton1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="SpecialAttackButton1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="SpecialAttackButton1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 174</value>
+  </data>
+  <data name="SpecialAttackButton1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 55</value>
+  </data>
+  <data name="SpecialAttackButton1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="SpecialAttackButton1.Text" xml:space="preserve">
+    <value>Special Attack</value>
+  </data>
+  <data name="&gt;&gt;SpecialAttackButton1.Name" xml:space="preserve">
+    <value>SpecialAttackButton1</value>
+  </data>
+  <data name="&gt;&gt;SpecialAttackButton1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SpecialAttackButton1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;SpecialAttackButton1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="BlockButton1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="BlockButton1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 235</value>
+  </data>
+  <data name="BlockButton1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 55</value>
+  </data>
+  <data name="BlockButton1.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="BlockButton1.Text" xml:space="preserve">
+    <value>Block</value>
+  </data>
+  <data name="&gt;&gt;BlockButton1.Name" xml:space="preserve">
+    <value>BlockButton1</value>
+  </data>
+  <data name="&gt;&gt;BlockButton1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BlockButton1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;BlockButton1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="BattleLogGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 325</value>
+  </data>
+  <data name="BattleLogGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>439, 225</value>
+  </data>
+  <data name="BattleLogGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="BattleLogGroupBox.Text" xml:space="preserve">
+    <value>Battle Log</value>
+  </data>
+  <data name="&gt;&gt;BattleLogGroupBox.Name" xml:space="preserve">
+    <value>BattleLogGroupBox</value>
+  </data>
+  <data name="&gt;&gt;BattleLogGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BattleLogGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;BattleLogGroupBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="OpponentHPLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="OpponentHPLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 18pt</value>
+  </data>
+  <data name="OpponentHPLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="OpponentHPLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>86, 104</value>
+  </data>
+  <data name="OpponentHPLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 41</value>
+  </data>
+  <data name="OpponentHPLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="OpponentHPLabel.Text" xml:space="preserve">
+    <value>HP:</value>
+  </data>
+  <data name="&gt;&gt;OpponentHPLabel.Name" xml:space="preserve">
+    <value>OpponentHPLabel</value>
+  </data>
+  <data name="&gt;&gt;OpponentHPLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;OpponentHPLabel.Parent" xml:space="preserve">
+    <value>OpponentGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;OpponentHPLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="OpponentDragonLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="OpponentDragonLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="OpponentDragonLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>86, 55</value>
+  </data>
+  <data name="OpponentDragonLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 20</value>
+  </data>
+  <data name="OpponentDragonLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="OpponentDragonLabel.Text" xml:space="preserve">
+    <value>Opponent Dragon</value>
+  </data>
+  <data name="&gt;&gt;OpponentDragonLabel.Name" xml:space="preserve">
+    <value>OpponentDragonLabel</value>
+  </data>
+  <data name="&gt;&gt;OpponentDragonLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;OpponentDragonLabel.Parent" xml:space="preserve">
+    <value>OpponentGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;OpponentDragonLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="OpponentNameLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="OpponentNameLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>86, 35</value>
+  </data>
+  <data name="OpponentNameLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 20</value>
+  </data>
+  <data name="OpponentNameLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="OpponentNameLabel.Text" xml:space="preserve">
+    <value>Opponent Name</value>
+  </data>
+  <data name="&gt;&gt;OpponentNameLabel.Name" xml:space="preserve">
+    <value>OpponentNameLabel</value>
+  </data>
+  <data name="&gt;&gt;OpponentNameLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;OpponentNameLabel.Parent" xml:space="preserve">
+    <value>OpponentGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;OpponentNameLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="OpponentGroupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>226, 93</value>
+  </data>
+  <data name="OpponentGroupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>288, 193</value>
+  </data>
+  <data name="OpponentGroupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="OpponentGroupBox1.Text" xml:space="preserve">
+    <value>Opponent</value>
+  </data>
+  <data name="&gt;&gt;OpponentGroupBox1.Name" xml:space="preserve">
+    <value>OpponentGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;OpponentGroupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;OpponentGroupBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;OpponentGroupBox1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>7, 15</value>
+    <value>8, 20</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>494, 439</value>
+    <value>565, 585</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>BattleForm</value>

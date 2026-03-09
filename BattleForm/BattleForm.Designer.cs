@@ -29,45 +29,115 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BattleForm));
-            GroupBoxAttacker = new GroupBox();
-            groupBox2 = new GroupBox();
-            groupBox3 = new GroupBox();
+            PlayerNameLabel = new Label();
+            DragonNameLabel = new Label();
+            DragonHPLabel1 = new Label();
+            AttackButton1 = new Button();
+            SpecialAttackButton1 = new Button();
+            BlockButton1 = new Button();
+            BattleLogGroupBox = new GroupBox();
+            OpponentGroupBox1 = new GroupBox();
+            OpponentHPLabel = new Label();
+            OpponentDragonLabel = new Label();
+            OpponentNameLabel = new Label();
+            OpponentGroupBox1.SuspendLayout();
             SuspendLayout();
             // 
-            // GroupBoxAttacker
+            // PlayerNameLabel
             // 
-            resources.ApplyResources(GroupBoxAttacker, "GroupBoxAttacker");
-            GroupBoxAttacker.Name = "GroupBoxAttacker";
-            GroupBoxAttacker.TabStop = false;
+            resources.ApplyResources(PlayerNameLabel, "PlayerNameLabel");
+            PlayerNameLabel.Name = "PlayerNameLabel";
             // 
-            // groupBox2
+            // DragonNameLabel
             // 
-            resources.ApplyResources(groupBox2, "groupBox2");
-            groupBox2.Name = "groupBox2";
-            groupBox2.TabStop = false;
+            resources.ApplyResources(DragonNameLabel, "DragonNameLabel");
+            DragonNameLabel.Name = "DragonNameLabel";
             // 
-            // groupBox3
+            // DragonHPLabel1
             // 
-            resources.ApplyResources(groupBox3, "groupBox3");
-            groupBox3.Name = "groupBox3";
-            groupBox3.TabStop = false;
+            resources.ApplyResources(DragonHPLabel1, "DragonHPLabel1");
+            DragonHPLabel1.Name = "DragonHPLabel1";
+            // 
+            // AttackButton1
+            // 
+            resources.ApplyResources(AttackButton1, "AttackButton1");
+            AttackButton1.Name = "AttackButton1";
+            AttackButton1.UseVisualStyleBackColor = true;
+            // 
+            // SpecialAttackButton1
+            // 
+            resources.ApplyResources(SpecialAttackButton1, "SpecialAttackButton1");
+            SpecialAttackButton1.Name = "SpecialAttackButton1";
+            SpecialAttackButton1.UseVisualStyleBackColor = true;
+            // 
+            // BlockButton1
+            // 
+            resources.ApplyResources(BlockButton1, "BlockButton1");
+            BlockButton1.Name = "BlockButton1";
+            BlockButton1.UseVisualStyleBackColor = true;
+            // 
+            // BattleLogGroupBox
+            // 
+            resources.ApplyResources(BattleLogGroupBox, "BattleLogGroupBox");
+            BattleLogGroupBox.Name = "BattleLogGroupBox";
+            BattleLogGroupBox.TabStop = false;
+            // 
+            // OpponentGroupBox1
+            // 
+            OpponentGroupBox1.Controls.Add(OpponentHPLabel);
+            OpponentGroupBox1.Controls.Add(OpponentDragonLabel);
+            OpponentGroupBox1.Controls.Add(OpponentNameLabel);
+            resources.ApplyResources(OpponentGroupBox1, "OpponentGroupBox1");
+            OpponentGroupBox1.Name = "OpponentGroupBox1";
+            OpponentGroupBox1.TabStop = false;
+            // 
+            // OpponentHPLabel
+            // 
+            resources.ApplyResources(OpponentHPLabel, "OpponentHPLabel");
+            OpponentHPLabel.Name = "OpponentHPLabel";
+            // 
+            // OpponentDragonLabel
+            // 
+            resources.ApplyResources(OpponentDragonLabel, "OpponentDragonLabel");
+            OpponentDragonLabel.Name = "OpponentDragonLabel";
+            // 
+            // OpponentNameLabel
+            // 
+            resources.ApplyResources(OpponentNameLabel, "OpponentNameLabel");
+            OpponentNameLabel.Name = "OpponentNameLabel";
             // 
             // BattleForm
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(groupBox3);
-            Controls.Add(groupBox2);
-            Controls.Add(GroupBoxAttacker);
+            Controls.Add(OpponentGroupBox1);
+            Controls.Add(BattleLogGroupBox);
+            Controls.Add(BlockButton1);
+            Controls.Add(SpecialAttackButton1);
+            Controls.Add(AttackButton1);
+            Controls.Add(DragonHPLabel1);
+            Controls.Add(DragonNameLabel);
+            Controls.Add(PlayerNameLabel);
             Name = "BattleForm";
             Load += BattleForm_Load;
+            OpponentGroupBox1.ResumeLayout(false);
+            OpponentGroupBox1.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
-        private GroupBox GroupBoxAttacker;
-        private GroupBox groupBox2;
-        private GroupBox groupBox3;
+        private Label PlayerNameLabel;
+        private Label DragonNameLabel;
+        private Label DragonHPLabel1;
+        private Button AttackButton1;
+        private Button SpecialAttackButton1;
+        private Button BlockButton1;
+        private GroupBox BattleLogGroupBox;
+        private GroupBox OpponentGroupBox1;
+        private Label OpponentHPLabel;
+        private Label OpponentDragonLabel;
+        private Label OpponentNameLabel;
     }
 }
