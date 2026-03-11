@@ -78,7 +78,6 @@
             groupBoxPlayer1.TabIndex = 0;
             groupBoxPlayer1.TabStop = false;
             groupBoxPlayer1.Text = "Player 1";
-            groupBoxPlayer1.Enter += groupBox1_Enter;
             // 
             // SaveButton1
             // 
@@ -89,7 +88,6 @@
             SaveButton1.TabIndex = 12;
             SaveButton1.Text = "SAVE";
             SaveButton1.UseVisualStyleBackColor = true;
-            SaveButton1.Click += button1_Click_1;
             // 
             // textBox1
             // 
@@ -121,7 +119,6 @@
             GroupBoxDragonType1.TabIndex = 9;
             GroupBoxDragonType1.TabStop = false;
             GroupBoxDragonType1.Text = "Dragon Type";
-            GroupBoxDragonType1.Enter += GroupBoxDragonType1_Enter;
             // 
             // RadioEarthDragon1
             // 
@@ -146,7 +143,6 @@
             RadioWindDragon1.TabStop = true;
             RadioWindDragon1.Text = "Wind Dragon";
             RadioWindDragon1.UseVisualStyleBackColor = true;
-            RadioWindDragon1.CheckedChanged += radioButton3_CheckedChanged;
             // 
             // RadioIceDragon1
             // 
@@ -180,7 +176,6 @@
             LabelDragonName1.Size = new Size(106, 20);
             LabelDragonName1.TabIndex = 3;
             LabelDragonName1.Text = "Dragon Name:";
-            LabelDragonName1.Click += LabelDragonName1_Click;
             // 
             // LabelPlayerName1
             // 
@@ -190,7 +185,6 @@
             LabelPlayerName1.Size = new Size(96, 20);
             LabelPlayerName1.TabIndex = 2;
             LabelPlayerName1.Text = "Player Name:";
-            LabelPlayerName1.Click += label1_Click;
             // 
             // groupBoxPlayer2
             // 
@@ -208,7 +202,6 @@
             groupBoxPlayer2.TabIndex = 1;
             groupBoxPlayer2.TabStop = false;
             groupBoxPlayer2.Text = "Player 2";
-            groupBoxPlayer2.Enter += groupBox2_Enter;
             // 
             // SaveButton2
             // 
@@ -282,7 +275,6 @@
             RadioFireDragon2.TabStop = true;
             RadioFireDragon2.Text = "Fire Dragon";
             RadioFireDragon2.UseVisualStyleBackColor = true;
-            RadioFireDragon2.CheckedChanged += radioButton8_CheckedChanged;
             // 
             // textBox3
             // 
@@ -317,7 +309,6 @@
             LabelPlayerName2.Size = new Size(96, 20);
             LabelPlayerName2.TabIndex = 3;
             LabelPlayerName2.Text = "Player Name:";
-            LabelPlayerName2.Click += label2_Click;
             // 
             // ButtonStartGame
             // 
@@ -337,7 +328,6 @@
             LabelDragonStats.Size = new Size(98, 20);
             LabelDragonStats.TabIndex = 3;
             LabelDragonStats.Text = "Dragon Stats:";
-            LabelDragonStats.Click += label1_Click_1;
             // 
             // IceDragonInfoLabel
             // 
