@@ -36,16 +36,15 @@
             SpecialAttackButton1 = new Button();
             BlockButton1 = new Button();
             BattleLogGroupBox = new GroupBox();
+            PictureBoxBattleLog = new PictureBox();
             BattleLogTextBox = new TextBox();
             OpponentGroupBox1 = new GroupBox();
             OpponentHPLabel = new Label();
             OpponentDragonLabel = new Label();
             OpponentNameLabel = new Label();
-            pictureBox1 = new PictureBox();
-            backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             BattleLogGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)PictureBoxBattleLog).BeginInit();
             OpponentGroupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // PlayerNameLabel
@@ -83,11 +82,18 @@
             // 
             // BattleLogGroupBox
             // 
-            BattleLogGroupBox.Controls.Add(pictureBox1);
+            BattleLogGroupBox.Controls.Add(PictureBoxBattleLog);
             BattleLogGroupBox.Controls.Add(BattleLogTextBox);
             resources.ApplyResources(BattleLogGroupBox, "BattleLogGroupBox");
             BattleLogGroupBox.Name = "BattleLogGroupBox";
             BattleLogGroupBox.TabStop = false;
+            // 
+            // PictureBoxBattleLog
+            // 
+            PictureBoxBattleLog.Image = Properties.Resources.dragon;
+            resources.ApplyResources(PictureBoxBattleLog, "PictureBoxBattleLog");
+            PictureBoxBattleLog.Name = "PictureBoxBattleLog";
+            PictureBoxBattleLog.TabStop = false;
             // 
             // BattleLogTextBox
             // 
@@ -118,14 +124,6 @@
             resources.ApplyResources(OpponentNameLabel, "OpponentNameLabel");
             OpponentNameLabel.Name = "OpponentNameLabel";
             // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = Properties.Resources.dragon;
-            resources.ApplyResources(pictureBox1, "pictureBox1");
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
-            // 
             // BattleForm
             // 
             resources.ApplyResources(this, "$this");
@@ -142,9 +140,9 @@
             Load += BattleForm_Load;
             BattleLogGroupBox.ResumeLayout(false);
             BattleLogGroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)PictureBoxBattleLog).EndInit();
             OpponentGroupBox1.ResumeLayout(false);
             OpponentGroupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -163,7 +161,6 @@
         private Label OpponentDragonLabel;
         private Label OpponentNameLabel;
         private TextBox BattleLogTextBox;
-        private PictureBox pictureBox1;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private PictureBox PictureBoxBattleLog;
     }
 }
