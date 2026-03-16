@@ -28,11 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             groupBoxPlayer1 = new GroupBox();
             SaveButton1 = new Button();
             textBox1 = new TextBox();
             textBox2 = new TextBox();
             GroupBoxDragonType1 = new GroupBox();
+            FireDragonPicBox1 = new PictureBox();
             RadioEarthDragon1 = new RadioButton();
             RadioWindDragon1 = new RadioButton();
             RadioIceDragon1 = new RadioButton();
@@ -42,6 +44,7 @@
             groupBoxPlayer2 = new GroupBox();
             SaveButton2 = new Button();
             GroupBoxDragonType2 = new GroupBox();
+            FireDragonPicBox2 = new PictureBox();
             RadioEarthDragon2 = new RadioButton();
             RadioWindDragon2 = new RadioButton();
             RadioIceDragon2 = new RadioButton();
@@ -58,8 +61,10 @@
             WindDragonInfoLabel = new Label();
             groupBoxPlayer1.SuspendLayout();
             GroupBoxDragonType1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)FireDragonPicBox1).BeginInit();
             groupBoxPlayer2.SuspendLayout();
             GroupBoxDragonType2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)FireDragonPicBox2).BeginInit();
             SuspendLayout();
             // 
             // groupBoxPlayer1
@@ -107,6 +112,7 @@
             // 
             // GroupBoxDragonType1
             // 
+            GroupBoxDragonType1.Controls.Add(FireDragonPicBox1);
             GroupBoxDragonType1.Controls.Add(RadioEarthDragon1);
             GroupBoxDragonType1.Controls.Add(RadioWindDragon1);
             GroupBoxDragonType1.Controls.Add(RadioIceDragon1);
@@ -119,6 +125,16 @@
             GroupBoxDragonType1.TabIndex = 9;
             GroupBoxDragonType1.TabStop = false;
             GroupBoxDragonType1.Text = "Dragon Type";
+            // 
+            // FireDragonPicBox1
+            // 
+            FireDragonPicBox1.Image = (Image)resources.GetObject("FireDragonPicBox1.Image");
+            FireDragonPicBox1.Location = new Point(188, 19);
+            FireDragonPicBox1.Name = "FireDragonPicBox1";
+            FireDragonPicBox1.Size = new Size(224, 195);
+            FireDragonPicBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            FireDragonPicBox1.TabIndex = 8;
+            FireDragonPicBox1.TabStop = false;
             // 
             // RadioEarthDragon1
             // 
@@ -215,6 +231,7 @@
             // 
             // GroupBoxDragonType2
             // 
+            GroupBoxDragonType2.Controls.Add(FireDragonPicBox2);
             GroupBoxDragonType2.Controls.Add(RadioEarthDragon2);
             GroupBoxDragonType2.Controls.Add(RadioWindDragon2);
             GroupBoxDragonType2.Controls.Add(RadioIceDragon2);
@@ -227,6 +244,16 @@
             GroupBoxDragonType2.TabIndex = 8;
             GroupBoxDragonType2.TabStop = false;
             GroupBoxDragonType2.Text = "Dragon Type";
+            // 
+            // FireDragonPicBox2
+            // 
+            FireDragonPicBox2.Image = (Image)resources.GetObject("FireDragonPicBox2.Image");
+            FireDragonPicBox2.Location = new Point(188, 19);
+            FireDragonPicBox2.Name = "FireDragonPicBox2";
+            FireDragonPicBox2.Size = new Size(224, 195);
+            FireDragonPicBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            FireDragonPicBox2.TabIndex = 9;
+            FireDragonPicBox2.TabStop = false;
             // 
             // RadioEarthDragon2
             // 
@@ -319,6 +346,7 @@
             ButtonStartGame.TabIndex = 2;
             ButtonStartGame.Text = "START GAME";
             ButtonStartGame.UseVisualStyleBackColor = true;
+            ButtonStartGame.Click += ButtonStartGame_Click;
             // 
             // LabelDragonStats
             // 
@@ -369,6 +397,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.GradientActiveCaption;
             ClientSize = new Size(1304, 600);
             Controls.Add(WindDragonInfoLabel);
             Controls.Add(EarthDragonInfoLabel);
@@ -386,10 +415,12 @@
             groupBoxPlayer1.PerformLayout();
             GroupBoxDragonType1.ResumeLayout(false);
             GroupBoxDragonType1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)FireDragonPicBox1).EndInit();
             groupBoxPlayer2.ResumeLayout(false);
             groupBoxPlayer2.PerformLayout();
             GroupBoxDragonType2.ResumeLayout(false);
             GroupBoxDragonType2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)FireDragonPicBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -424,5 +455,7 @@
         private Label FireDragonInfoLabel;
         private Label EarthDragonInfoLabel;
         private Label WindDragonInfoLabel;
+        private PictureBox FireDragonPicBox1;
+        private PictureBox FireDragonPicBox2;
     }
 }

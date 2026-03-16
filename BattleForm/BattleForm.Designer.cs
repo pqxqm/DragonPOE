@@ -1,4 +1,4 @@
-﻿namespace BattleForm
+﻿namespace TaskPOEGameDevelopment
 {
     partial class BattleForm
     {

@@ -6,9 +6,18 @@ namespace TaskPOEGameDevelopment
         {
             InitializeComponent();
         }
-       
+
         private void Form1_Load(object sender, EventArgs e)
         {
+
+        }
+
+        private void ButtonStartGame_Click(object sender, EventArgs e)
+        {
+            //once clicked open up second form and hide this one
+            this.Hide();
+            BattleForm battleForm = new BattleForm();
+            battleForm.Show();
 
         }
     }
