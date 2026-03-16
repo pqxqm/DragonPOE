@@ -40,6 +40,8 @@
             OpponentHPLabel = new Label();
             OpponentDragonLabel = new Label();
             OpponentNameLabel = new Label();
+            BattleLogTextBox = new TextBox();
+            BattleLogGroupBox.SuspendLayout();
             OpponentGroupBox1.SuspendLayout();
             SuspendLayout();
             // 
@@ -78,6 +80,7 @@
             // 
             // BattleLogGroupBox
             // 
+            BattleLogGroupBox.Controls.Add(BattleLogTextBox);
             resources.ApplyResources(BattleLogGroupBox, "BattleLogGroupBox");
             BattleLogGroupBox.Name = "BattleLogGroupBox";
             BattleLogGroupBox.TabStop = false;
@@ -106,6 +109,11 @@
             resources.ApplyResources(OpponentNameLabel, "OpponentNameLabel");
             OpponentNameLabel.Name = "OpponentNameLabel";
             // 
+            // BattleLogTextBox
+            // 
+            resources.ApplyResources(BattleLogTextBox, "BattleLogTextBox");
+            BattleLogTextBox.Name = "BattleLogTextBox";
+            // 
             // BattleForm
             // 
             resources.ApplyResources(this, "$this");
@@ -120,6 +128,8 @@
             Controls.Add(PlayerNameLabel);
             Name = "BattleForm";
             Load += BattleForm_Load;
+            BattleLogGroupBox.ResumeLayout(false);
+            BattleLogGroupBox.PerformLayout();
             OpponentGroupBox1.ResumeLayout(false);
             OpponentGroupBox1.PerformLayout();
             ResumeLayout(false);
@@ -139,5 +149,6 @@
         private Label OpponentHPLabel;
         private Label OpponentDragonLabel;
         private Label OpponentNameLabel;
+        private TextBox BattleLogTextBox;
     }
 }
