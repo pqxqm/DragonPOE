@@ -86,6 +86,7 @@
             // 
             // SaveButton1
             // 
+            SaveButton1.Font = new Font("Snap ITC", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             SaveButton1.Location = new Point(45, 404);
             SaveButton1.Margin = new Padding(3, 4, 3, 4);
             SaveButton1.Name = "SaveButton1";
@@ -96,7 +97,7 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(126, 83);
+            textBox1.Location = new Point(146, 83);
             textBox1.Margin = new Padding(3, 4, 3, 4);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(363, 27);
@@ -104,7 +105,7 @@
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(126, 45);
+            textBox2.Location = new Point(146, 45);
             textBox2.Margin = new Padding(3, 4, 3, 4);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(363, 27);
@@ -129,9 +130,9 @@
             // FireDragonPicBox1
             // 
             FireDragonPicBox1.Image = (Image)resources.GetObject("FireDragonPicBox1.Image");
-            FireDragonPicBox1.Location = new Point(188, 19);
+            FireDragonPicBox1.Location = new Point(226, 36);
             FireDragonPicBox1.Name = "FireDragonPicBox1";
-            FireDragonPicBox1.Size = new Size(224, 195);
+            FireDragonPicBox1.Size = new Size(178, 150);
             FireDragonPicBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             FireDragonPicBox1.TabIndex = 8;
             FireDragonPicBox1.TabStop = false;
@@ -139,10 +140,12 @@
             // RadioEarthDragon1
             // 
             RadioEarthDragon1.AutoSize = true;
+            RadioEarthDragon1.Font = new Font("Showcard Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            RadioEarthDragon1.ForeColor = Color.FromArgb(128, 64, 0);
             RadioEarthDragon1.Location = new Point(22, 147);
             RadioEarthDragon1.Margin = new Padding(3, 4, 3, 4);
             RadioEarthDragon1.Name = "RadioEarthDragon1";
-            RadioEarthDragon1.Size = new Size(118, 24);
+            RadioEarthDragon1.Size = new Size(198, 30);
             RadioEarthDragon1.TabIndex = 3;
             RadioEarthDragon1.TabStop = true;
             RadioEarthDragon1.Text = "Earth Dragon";
@@ -151,10 +154,12 @@
             // RadioWindDragon1
             // 
             RadioWindDragon1.AutoSize = true;
+            RadioWindDragon1.Font = new Font("Showcard Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            RadioWindDragon1.ForeColor = Color.FromArgb(192, 255, 255);
             RadioWindDragon1.Location = new Point(22, 113);
             RadioWindDragon1.Margin = new Padding(3, 4, 3, 4);
             RadioWindDragon1.Name = "RadioWindDragon1";
-            RadioWindDragon1.Size = new Size(119, 24);
+            RadioWindDragon1.Size = new Size(187, 30);
             RadioWindDragon1.TabIndex = 2;
             RadioWindDragon1.TabStop = true;
             RadioWindDragon1.Text = "Wind Dragon";
@@ -163,10 +168,12 @@
             // RadioIceDragon1
             // 
             RadioIceDragon1.AutoSize = true;
+            RadioIceDragon1.Font = new Font("Showcard Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            RadioIceDragon1.ForeColor = Color.Cyan;
             RadioIceDragon1.Location = new Point(22, 80);
             RadioIceDragon1.Margin = new Padding(3, 4, 3, 4);
             RadioIceDragon1.Name = "RadioIceDragon1";
-            RadioIceDragon1.Size = new Size(103, 24);
+            RadioIceDragon1.Size = new Size(160, 30);
             RadioIceDragon1.TabIndex = 1;
             RadioIceDragon1.TabStop = true;
             RadioIceDragon1.Text = "Ice Dragon";
@@ -175,10 +182,12 @@
             // RadioFireDragon1
             // 
             RadioFireDragon1.AutoSize = true;
+            RadioFireDragon1.Font = new Font("Showcard Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            RadioFireDragon1.ForeColor = Color.Red;
             RadioFireDragon1.Location = new Point(22, 47);
             RadioFireDragon1.Margin = new Padding(3, 4, 3, 4);
             RadioFireDragon1.Name = "RadioFireDragon1";
-            RadioFireDragon1.Size = new Size(108, 24);
+            RadioFireDragon1.Size = new Size(174, 30);
             RadioFireDragon1.TabIndex = 0;
             RadioFireDragon1.TabStop = true;
             RadioFireDragon1.Text = "Fire Dragon";
@@ -187,18 +196,20 @@
             // LabelDragonName1
             // 
             LabelDragonName1.AutoSize = true;
+            LabelDragonName1.Font = new Font("Snap ITC", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             LabelDragonName1.Location = new Point(7, 79);
             LabelDragonName1.Name = "LabelDragonName1";
-            LabelDragonName1.Size = new Size(106, 20);
+            LabelDragonName1.Size = new Size(136, 19);
             LabelDragonName1.TabIndex = 3;
             LabelDragonName1.Text = "Dragon Name:";
             // 
             // LabelPlayerName1
             // 
             LabelPlayerName1.AutoSize = true;
+            LabelPlayerName1.Font = new Font("Snap ITC", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             LabelPlayerName1.Location = new Point(7, 45);
             LabelPlayerName1.Name = "LabelPlayerName1";
-            LabelPlayerName1.Size = new Size(96, 20);
+            LabelPlayerName1.Size = new Size(133, 19);
             LabelPlayerName1.TabIndex = 2;
             LabelPlayerName1.Text = "Player Name:";
             // 
@@ -221,6 +232,7 @@
             // 
             // SaveButton2
             // 
+            SaveButton2.Font = new Font("Snap ITC", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             SaveButton2.Location = new Point(45, 404);
             SaveButton2.Margin = new Padding(3, 4, 3, 4);
             SaveButton2.Name = "SaveButton2";
@@ -248,9 +260,9 @@
             // FireDragonPicBox2
             // 
             FireDragonPicBox2.Image = (Image)resources.GetObject("FireDragonPicBox2.Image");
-            FireDragonPicBox2.Location = new Point(188, 19);
+            FireDragonPicBox2.Location = new Point(226, 36);
             FireDragonPicBox2.Name = "FireDragonPicBox2";
-            FireDragonPicBox2.Size = new Size(224, 195);
+            FireDragonPicBox2.Size = new Size(178, 150);
             FireDragonPicBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             FireDragonPicBox2.TabIndex = 9;
             FireDragonPicBox2.TabStop = false;
@@ -258,10 +270,12 @@
             // RadioEarthDragon2
             // 
             RadioEarthDragon2.AutoSize = true;
+            RadioEarthDragon2.Font = new Font("Showcard Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            RadioEarthDragon2.ForeColor = Color.FromArgb(128, 64, 0);
             RadioEarthDragon2.Location = new Point(22, 147);
             RadioEarthDragon2.Margin = new Padding(3, 4, 3, 4);
             RadioEarthDragon2.Name = "RadioEarthDragon2";
-            RadioEarthDragon2.Size = new Size(118, 24);
+            RadioEarthDragon2.Size = new Size(198, 30);
             RadioEarthDragon2.TabIndex = 7;
             RadioEarthDragon2.TabStop = true;
             RadioEarthDragon2.Text = "Earth Dragon";
@@ -270,10 +284,12 @@
             // RadioWindDragon2
             // 
             RadioWindDragon2.AutoSize = true;
+            RadioWindDragon2.Font = new Font("Showcard Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            RadioWindDragon2.ForeColor = Color.FromArgb(192, 255, 255);
             RadioWindDragon2.Location = new Point(22, 113);
             RadioWindDragon2.Margin = new Padding(3, 4, 3, 4);
             RadioWindDragon2.Name = "RadioWindDragon2";
-            RadioWindDragon2.Size = new Size(119, 24);
+            RadioWindDragon2.Size = new Size(187, 30);
             RadioWindDragon2.TabIndex = 6;
             RadioWindDragon2.TabStop = true;
             RadioWindDragon2.Text = "Wind Dragon";
@@ -282,10 +298,12 @@
             // RadioIceDragon2
             // 
             RadioIceDragon2.AutoSize = true;
+            RadioIceDragon2.Font = new Font("Showcard Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            RadioIceDragon2.ForeColor = Color.Cyan;
             RadioIceDragon2.Location = new Point(22, 80);
             RadioIceDragon2.Margin = new Padding(3, 4, 3, 4);
             RadioIceDragon2.Name = "RadioIceDragon2";
-            RadioIceDragon2.Size = new Size(103, 24);
+            RadioIceDragon2.Size = new Size(160, 30);
             RadioIceDragon2.TabIndex = 5;
             RadioIceDragon2.TabStop = true;
             RadioIceDragon2.Text = "Ice Dragon";
@@ -294,10 +312,12 @@
             // RadioFireDragon2
             // 
             RadioFireDragon2.AutoSize = true;
+            RadioFireDragon2.Font = new Font("Showcard Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            RadioFireDragon2.ForeColor = Color.Red;
             RadioFireDragon2.Location = new Point(22, 47);
             RadioFireDragon2.Margin = new Padding(3, 4, 3, 4);
             RadioFireDragon2.Name = "RadioFireDragon2";
-            RadioFireDragon2.Size = new Size(108, 24);
+            RadioFireDragon2.Size = new Size(174, 30);
             RadioFireDragon2.TabIndex = 4;
             RadioFireDragon2.TabStop = true;
             RadioFireDragon2.Text = "Fire Dragon";
@@ -305,7 +325,7 @@
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(126, 83);
+            textBox3.Location = new Point(146, 83);
             textBox3.Margin = new Padding(3, 4, 3, 4);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(363, 27);
@@ -313,7 +333,7 @@
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(126, 45);
+            textBox4.Location = new Point(146, 45);
             textBox4.Margin = new Padding(3, 4, 3, 4);
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(363, 27);
@@ -322,23 +342,26 @@
             // LabelDragonName2
             // 
             LabelDragonName2.AutoSize = true;
+            LabelDragonName2.Font = new Font("Snap ITC", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             LabelDragonName2.Location = new Point(7, 79);
             LabelDragonName2.Name = "LabelDragonName2";
-            LabelDragonName2.Size = new Size(106, 20);
+            LabelDragonName2.Size = new Size(136, 19);
             LabelDragonName2.TabIndex = 4;
             LabelDragonName2.Text = "Dragon Name:";
             // 
             // LabelPlayerName2
             // 
             LabelPlayerName2.AutoSize = true;
+            LabelPlayerName2.Font = new Font("Snap ITC", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             LabelPlayerName2.Location = new Point(7, 45);
             LabelPlayerName2.Name = "LabelPlayerName2";
-            LabelPlayerName2.Size = new Size(96, 20);
+            LabelPlayerName2.Size = new Size(133, 19);
             LabelPlayerName2.TabIndex = 3;
             LabelPlayerName2.Text = "Player Name:";
             // 
             // ButtonStartGame
             // 
+            ButtonStartGame.Font = new Font("Snap ITC", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             ButtonStartGame.Location = new Point(14, 535);
             ButtonStartGame.Margin = new Padding(3, 4, 3, 4);
             ButtonStartGame.Name = "ButtonStartGame";
