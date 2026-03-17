@@ -36,14 +36,12 @@
             SpecialAttackButton1 = new Button();
             BlockButton1 = new Button();
             BattleLogGroupBox = new GroupBox();
-            PictureBoxBattleLog = new PictureBox();
             BattleLogTextBox = new TextBox();
             OpponentGroupBox1 = new GroupBox();
             OpponentHPLabel = new Label();
             OpponentDragonLabel = new Label();
             OpponentNameLabel = new Label();
             BattleLogGroupBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)PictureBoxBattleLog).BeginInit();
             OpponentGroupBox1.SuspendLayout();
             SuspendLayout();
             // 
@@ -82,18 +80,10 @@
             // 
             // BattleLogGroupBox
             // 
-            BattleLogGroupBox.Controls.Add(PictureBoxBattleLog);
             BattleLogGroupBox.Controls.Add(BattleLogTextBox);
             resources.ApplyResources(BattleLogGroupBox, "BattleLogGroupBox");
             BattleLogGroupBox.Name = "BattleLogGroupBox";
             BattleLogGroupBox.TabStop = false;
-            // 
-            // PictureBoxBattleLog
-            // 
-            PictureBoxBattleLog.Image = Properties.Resources.dragon;
-            resources.ApplyResources(PictureBoxBattleLog, "PictureBoxBattleLog");
-            PictureBoxBattleLog.Name = "PictureBoxBattleLog";
-            PictureBoxBattleLog.TabStop = false;
             // 
             // BattleLogTextBox
             // 
@@ -140,7 +130,6 @@
             Load += BattleForm_Load;
             BattleLogGroupBox.ResumeLayout(false);
             BattleLogGroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)PictureBoxBattleLog).EndInit();
             OpponentGroupBox1.ResumeLayout(false);
             OpponentGroupBox1.PerformLayout();
             ResumeLayout(false);
@@ -161,6 +150,5 @@
         private Label OpponentDragonLabel;
         private Label OpponentNameLabel;
         private TextBox BattleLogTextBox;
-        private PictureBox PictureBoxBattleLog;
     }
 }

@@ -7,6 +7,7 @@ namespace TaskPOEGameDevelopment
             InitializeComponent();
         }
 
+        //Loads second form known as battleform
         private void BattleForm_Load(object sender, EventArgs e)
         {
 

@@ -14,7 +14,7 @@ namespace TaskPOEGameDevelopment
 
         private void ButtonStartGame_Click(object sender, EventArgs e)
         {
-            //once clicked open up second form and hide this one
+            //once clicked open up second form and hide this form
             this.Hide();
             BattleForm battleForm = new BattleForm();
             battleForm.Show();
