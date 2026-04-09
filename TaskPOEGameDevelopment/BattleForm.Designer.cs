@@ -48,11 +48,14 @@
             // PlayerNameLabel
             // 
             resources.ApplyResources(PlayerNameLabel, "PlayerNameLabel");
+            PlayerNameLabel.ForeColor = Color.Firebrick;
             PlayerNameLabel.Name = "PlayerNameLabel";
+            PlayerNameLabel.Click += PlayerNameLabel_Click;
             // 
             // DragonNameLabel
             // 
             resources.ApplyResources(DragonNameLabel, "DragonNameLabel");
+            DragonNameLabel.ForeColor = Color.Brown;
             DragonNameLabel.Name = "DragonNameLabel";
             // 
             // DragonHPLabel1
@@ -62,21 +65,25 @@
             // 
             // AttackButton1
             // 
+            AttackButton1.BackColor = Color.Crimson;
             resources.ApplyResources(AttackButton1, "AttackButton1");
             AttackButton1.Name = "AttackButton1";
-            AttackButton1.UseVisualStyleBackColor = true;
+            AttackButton1.UseVisualStyleBackColor = false;
+            AttackButton1.Click += AttackButton1_Click;
             // 
             // SpecialAttackButton1
             // 
+            SpecialAttackButton1.BackColor = Color.Aqua;
             resources.ApplyResources(SpecialAttackButton1, "SpecialAttackButton1");
             SpecialAttackButton1.Name = "SpecialAttackButton1";
-            SpecialAttackButton1.UseVisualStyleBackColor = true;
+            SpecialAttackButton1.UseVisualStyleBackColor = false;
             // 
             // BlockButton1
             // 
+            BlockButton1.BackColor = Color.DarkGreen;
             resources.ApplyResources(BlockButton1, "BlockButton1");
             BlockButton1.Name = "BlockButton1";
-            BlockButton1.UseVisualStyleBackColor = true;
+            BlockButton1.UseVisualStyleBackColor = false;
             // 
             // BattleLogGroupBox
             // 
@@ -84,6 +91,7 @@
             resources.ApplyResources(BattleLogGroupBox, "BattleLogGroupBox");
             BattleLogGroupBox.Name = "BattleLogGroupBox";
             BattleLogGroupBox.TabStop = false;
+            BattleLogGroupBox.Enter += BattleLogGroupBox_Enter;
             // 
             // BattleLogTextBox
             // 
@@ -92,12 +100,13 @@
             // 
             // OpponentGroupBox1
             // 
+            resources.ApplyResources(OpponentGroupBox1, "OpponentGroupBox1");
             OpponentGroupBox1.Controls.Add(OpponentHPLabel);
             OpponentGroupBox1.Controls.Add(OpponentDragonLabel);
             OpponentGroupBox1.Controls.Add(OpponentNameLabel);
-            resources.ApplyResources(OpponentGroupBox1, "OpponentGroupBox1");
             OpponentGroupBox1.Name = "OpponentGroupBox1";
             OpponentGroupBox1.TabStop = false;
+            OpponentGroupBox1.Enter += OpponentGroupBox1_Enter;
             // 
             // OpponentHPLabel
             // 
@@ -113,11 +122,13 @@
             // 
             resources.ApplyResources(OpponentNameLabel, "OpponentNameLabel");
             OpponentNameLabel.Name = "OpponentNameLabel";
+            OpponentNameLabel.Click += OpponentNameLabel_Click;
             // 
             // BattleForm
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.GradientActiveCaption;
             Controls.Add(OpponentGroupBox1);
             Controls.Add(BattleLogGroupBox);
             Controls.Add(BlockButton1);
