@@ -50,7 +50,6 @@
             resources.ApplyResources(PlayerNameLabel, "PlayerNameLabel");
             PlayerNameLabel.ForeColor = Color.Firebrick;
             PlayerNameLabel.Name = "PlayerNameLabel";
-            PlayerNameLabel.Click += PlayerNameLabel_Click;
             // 
             // DragonNameLabel
             // 
@@ -69,7 +68,6 @@
             resources.ApplyResources(AttackButton1, "AttackButton1");
             AttackButton1.Name = "AttackButton1";
             AttackButton1.UseVisualStyleBackColor = false;
-            AttackButton1.Click += AttackButton1_Click;
             // 
             // SpecialAttackButton1
             // 
@@ -91,7 +89,6 @@
             resources.ApplyResources(BattleLogGroupBox, "BattleLogGroupBox");
             BattleLogGroupBox.Name = "BattleLogGroupBox";
             BattleLogGroupBox.TabStop = false;
-            BattleLogGroupBox.Enter += BattleLogGroupBox_Enter;
             // 
             // BattleLogTextBox
             // 
@@ -106,7 +103,6 @@
             OpponentGroupBox1.Controls.Add(OpponentNameLabel);
             OpponentGroupBox1.Name = "OpponentGroupBox1";
             OpponentGroupBox1.TabStop = false;
-            OpponentGroupBox1.Enter += OpponentGroupBox1_Enter;
             // 
             // OpponentHPLabel
             // 
@@ -122,7 +118,6 @@
             // 
             resources.ApplyResources(OpponentNameLabel, "OpponentNameLabel");
             OpponentNameLabel.Name = "OpponentNameLabel";
-            OpponentNameLabel.Click += OpponentNameLabel_Click;
             // 
             // BattleForm
             // 

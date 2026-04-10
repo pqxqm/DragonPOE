@@ -12,30 +12,7 @@ namespace TaskPOEGameDevelopment
         {
 
         }
-
-        private void PlayerNameLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void BattleLogGroupBox_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void AttackButton1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void OpponentGroupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void OpponentNameLabel_Click(object sender, EventArgs e)
-        {
-
-        }
+        //Referencing
+        //Piyush S, 2026. Intense flames captured in detailed close-up. [image online] Available at: <https://www.pexels.com/photo/intense-flames-captured-in-detailed-close-up-36677596/\> [Accessed 10 April 2026].
     }
 }
