@@ -123,6 +123,8 @@ namespace TaskPOEGameDevelopment
             //once clicked open up second form and hide this form
             this.Hide();
             BattleForm battleForm = new BattleForm();
+            
+            battleForm.ReceiveData(P1data, P2data, P1values, P2values);
             battleForm.Show();
 
         }

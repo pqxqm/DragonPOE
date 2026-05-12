@@ -41,11 +41,11 @@
             OpponentDragonLabel = new Label();
             OpponentHPLabel = new Label();
             OpponentGroupBox1 = new GroupBox();
+            BattleLogOppHP = new TextBox();
+            BattleLogOppDragonName = new TextBox();
+            BattleLogOppName = new TextBox();
             BattleLogMainName = new TextBox();
             BattleLogMainDragonName = new TextBox();
-            BattleLogOppName = new TextBox();
-            BattleLogOppDragonName = new TextBox();
-            BattleLogOppHP = new TextBox();
             BattleLogMainHP = new TextBox();
             BattleLogGroupBox.SuspendLayout();
             OpponentGroupBox1.SuspendLayout();
@@ -128,6 +128,21 @@
             OpponentGroupBox1.Name = "OpponentGroupBox1";
             OpponentGroupBox1.TabStop = false;
             // 
+            // BattleLogOppHP
+            // 
+            resources.ApplyResources(BattleLogOppHP, "BattleLogOppHP");
+            BattleLogOppHP.Name = "BattleLogOppHP";
+            // 
+            // BattleLogOppDragonName
+            // 
+            resources.ApplyResources(BattleLogOppDragonName, "BattleLogOppDragonName");
+            BattleLogOppDragonName.Name = "BattleLogOppDragonName";
+            // 
+            // BattleLogOppName
+            // 
+            resources.ApplyResources(BattleLogOppName, "BattleLogOppName");
+            BattleLogOppName.Name = "BattleLogOppName";
+            // 
             // BattleLogMainName
             // 
             resources.ApplyResources(BattleLogMainName, "BattleLogMainName");
@@ -137,21 +152,6 @@
             // 
             resources.ApplyResources(BattleLogMainDragonName, "BattleLogMainDragonName");
             BattleLogMainDragonName.Name = "BattleLogMainDragonName";
-            // 
-            // BattleLogOppName
-            // 
-            resources.ApplyResources(BattleLogOppName, "BattleLogOppName");
-            BattleLogOppName.Name = "BattleLogOppName";
-            // 
-            // BattleLogOppDragonName
-            // 
-            resources.ApplyResources(BattleLogOppDragonName, "BattleLogOppDragonName");
-            BattleLogOppDragonName.Name = "BattleLogOppDragonName";
-            // 
-            // BattleLogOppHP
-            // 
-            resources.ApplyResources(BattleLogOppHP, "BattleLogOppHP");
-            BattleLogOppHP.Name = "BattleLogOppHP";
             // 
             // BattleLogMainHP
             // 
