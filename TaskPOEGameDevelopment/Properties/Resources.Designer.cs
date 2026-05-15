@@ -63,9 +63,9 @@ namespace TaskPOEGameDevelopment.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap dragon {
+        internal static System.Drawing.Bitmap AttackGif {
             get {
-                object obj = ResourceManager.GetObject("dragon", resourceCulture);
+                object obj = ResourceManager.GetObject("AttackGif", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,79 @@ namespace TaskPOEGameDevelopment.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap dragon_2 {
+        internal static System.Drawing.Bitmap Block {
             get {
-                object obj = ResourceManager.GetObject("dragon 2", resourceCulture);
+                object obj = ResourceManager.GetObject("Block", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap EarthDragon {
+            get {
+                object obj = ResourceManager.GetObject("EarthDragon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FireDragon {
+            get {
+                object obj = ResourceManager.GetObject("FireDragon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FireGif {
+            get {
+                object obj = ResourceManager.GetObject("FireGif", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IceDragon {
+            get {
+                object obj = ResourceManager.GetObject("IceDragon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap NatureBackGround {
+            get {
+                object obj = ResourceManager.GetObject("NatureBackGround", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SpecialAttack {
+            get {
+                object obj = ResourceManager.GetObject("SpecialAttack", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WindDragon {
+            get {
+                object obj = ResourceManager.GetObject("WindDragon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

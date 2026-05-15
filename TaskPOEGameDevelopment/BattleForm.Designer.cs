@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BattleForm));
             PlayerNameLabel = new Label();
             DragonNameLabel = new Label();
@@ -40,146 +41,176 @@
             OpponentNameLabel = new Label();
             OpponentDragonLabel = new Label();
             OpponentHPLabel = new Label();
-            OpponentGroupBox1 = new GroupBox();
-            BattleLogOppHP = new TextBox();
-            BattleLogOppDragonName = new TextBox();
-            BattleLogOppName = new TextBox();
-            BattleLogMainName = new TextBox();
-            BattleLogMainDragonName = new TextBox();
-            BattleLogMainHP = new TextBox();
+            OpponentDragonType = new Label();
+            DragonType1 = new Label();
+            pictureBoxBackground = new PictureBox();
+            OpponentLabelOne = new Label();
+            CurrentPlayerLabelOne = new Label();
+            ActionPicBox = new PictureBox();
+            timer1 = new System.Windows.Forms.Timer(components);
             BattleLogGroupBox.SuspendLayout();
-            OpponentGroupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxBackground).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)ActionPicBox).BeginInit();
             SuspendLayout();
             // 
             // PlayerNameLabel
             // 
+            PlayerNameLabel.BackColor = Color.Transparent;
             resources.ApplyResources(PlayerNameLabel, "PlayerNameLabel");
-            PlayerNameLabel.ForeColor = Color.Firebrick;
+            PlayerNameLabel.ForeColor = Color.Gold;
             PlayerNameLabel.Name = "PlayerNameLabel";
             // 
             // DragonNameLabel
             // 
+            DragonNameLabel.BackColor = Color.Transparent;
             resources.ApplyResources(DragonNameLabel, "DragonNameLabel");
-            DragonNameLabel.ForeColor = Color.Brown;
+            DragonNameLabel.ForeColor = Color.Gold;
             DragonNameLabel.Name = "DragonNameLabel";
             // 
             // DragonHPLabel1
             // 
+            DragonHPLabel1.BackColor = Color.Transparent;
             resources.ApplyResources(DragonHPLabel1, "DragonHPLabel1");
+            DragonHPLabel1.ForeColor = Color.Lime;
             DragonHPLabel1.Name = "DragonHPLabel1";
             // 
             // AttackButton1
             // 
-            AttackButton1.BackColor = Color.Crimson;
+            AttackButton1.BackColor = Color.DarkRed;
             resources.ApplyResources(AttackButton1, "AttackButton1");
+            AttackButton1.ForeColor = Color.Gold;
             AttackButton1.Name = "AttackButton1";
             AttackButton1.UseVisualStyleBackColor = false;
+            AttackButton1.Click += AttackButton1_Click;
             // 
             // SpecialAttackButton1
             // 
-            SpecialAttackButton1.BackColor = Color.Aqua;
+            SpecialAttackButton1.BackColor = Color.Indigo;
             resources.ApplyResources(SpecialAttackButton1, "SpecialAttackButton1");
+            SpecialAttackButton1.ForeColor = Color.Aqua;
             SpecialAttackButton1.Name = "SpecialAttackButton1";
             SpecialAttackButton1.UseVisualStyleBackColor = false;
+            SpecialAttackButton1.Click += SpecialAttackButton1_Click;
             // 
             // BlockButton1
             // 
-            BlockButton1.BackColor = Color.DarkGreen;
+            BlockButton1.BackColor = Color.DarkSlateGray;
             resources.ApplyResources(BlockButton1, "BlockButton1");
+            BlockButton1.ForeColor = Color.Silver;
             BlockButton1.Name = "BlockButton1";
             BlockButton1.UseVisualStyleBackColor = false;
+            BlockButton1.Click += BlockButton1_Click;
             // 
             // BattleLogGroupBox
             // 
+            BattleLogGroupBox.BackColor = Color.DarkRed;
             BattleLogGroupBox.Controls.Add(BattleLogTextBox);
             resources.ApplyResources(BattleLogGroupBox, "BattleLogGroupBox");
+            BattleLogGroupBox.ForeColor = Color.Gold;
             BattleLogGroupBox.Name = "BattleLogGroupBox";
             BattleLogGroupBox.TabStop = false;
             // 
             // BattleLogTextBox
             // 
+            BattleLogTextBox.BackColor = Color.FromArgb(26, 10, 0);
             resources.ApplyResources(BattleLogTextBox, "BattleLogTextBox");
+            BattleLogTextBox.ForeColor = Color.Gold;
             BattleLogTextBox.Name = "BattleLogTextBox";
+            BattleLogTextBox.ReadOnly = true;
             // 
             // OpponentNameLabel
             // 
+            OpponentNameLabel.BackColor = Color.Transparent;
             resources.ApplyResources(OpponentNameLabel, "OpponentNameLabel");
+            OpponentNameLabel.ForeColor = Color.Gold;
             OpponentNameLabel.Name = "OpponentNameLabel";
             // 
             // OpponentDragonLabel
             // 
+            OpponentDragonLabel.BackColor = Color.Transparent;
             resources.ApplyResources(OpponentDragonLabel, "OpponentDragonLabel");
+            OpponentDragonLabel.ForeColor = Color.Gold;
             OpponentDragonLabel.Name = "OpponentDragonLabel";
             // 
             // OpponentHPLabel
             // 
+            OpponentHPLabel.BackColor = Color.Transparent;
             resources.ApplyResources(OpponentHPLabel, "OpponentHPLabel");
+            OpponentHPLabel.ForeColor = Color.Lime;
             OpponentHPLabel.Name = "OpponentHPLabel";
             // 
-            // OpponentGroupBox1
+            // OpponentDragonType
             // 
-            resources.ApplyResources(OpponentGroupBox1, "OpponentGroupBox1");
-            OpponentGroupBox1.Controls.Add(BattleLogOppHP);
-            OpponentGroupBox1.Controls.Add(BattleLogOppDragonName);
-            OpponentGroupBox1.Controls.Add(BattleLogOppName);
-            OpponentGroupBox1.Controls.Add(OpponentHPLabel);
-            OpponentGroupBox1.Controls.Add(OpponentDragonLabel);
-            OpponentGroupBox1.Controls.Add(OpponentNameLabel);
-            OpponentGroupBox1.Name = "OpponentGroupBox1";
-            OpponentGroupBox1.TabStop = false;
+            OpponentDragonType.BackColor = Color.Transparent;
+            resources.ApplyResources(OpponentDragonType, "OpponentDragonType");
+            OpponentDragonType.ForeColor = Color.OrangeRed;
+            OpponentDragonType.Name = "OpponentDragonType";
             // 
-            // BattleLogOppHP
+            // DragonType1
             // 
-            resources.ApplyResources(BattleLogOppHP, "BattleLogOppHP");
-            BattleLogOppHP.Name = "BattleLogOppHP";
+            DragonType1.BackColor = Color.Transparent;
+            resources.ApplyResources(DragonType1, "DragonType1");
+            DragonType1.ForeColor = Color.OrangeRed;
+            DragonType1.Name = "DragonType1";
             // 
-            // BattleLogOppDragonName
+            // pictureBoxBackground
             // 
-            resources.ApplyResources(BattleLogOppDragonName, "BattleLogOppDragonName");
-            BattleLogOppDragonName.Name = "BattleLogOppDragonName";
+            resources.ApplyResources(pictureBoxBackground, "pictureBoxBackground");
+            pictureBoxBackground.Name = "pictureBoxBackground";
+            pictureBoxBackground.TabStop = false;
             // 
-            // BattleLogOppName
+            // OpponentLabelOne
             // 
-            resources.ApplyResources(BattleLogOppName, "BattleLogOppName");
-            BattleLogOppName.Name = "BattleLogOppName";
+            resources.ApplyResources(OpponentLabelOne, "OpponentLabelOne");
+            OpponentLabelOne.BackColor = Color.Transparent;
+            OpponentLabelOne.ForeColor = Color.OrangeRed;
+            OpponentLabelOne.Name = "OpponentLabelOne";
             // 
-            // BattleLogMainName
+            // CurrentPlayerLabelOne
             // 
-            resources.ApplyResources(BattleLogMainName, "BattleLogMainName");
-            BattleLogMainName.Name = "BattleLogMainName";
+            resources.ApplyResources(CurrentPlayerLabelOne, "CurrentPlayerLabelOne");
+            CurrentPlayerLabelOne.BackColor = Color.Transparent;
+            CurrentPlayerLabelOne.ForeColor = Color.OrangeRed;
+            CurrentPlayerLabelOne.Name = "CurrentPlayerLabelOne";
             // 
-            // BattleLogMainDragonName
+            // ActionPicBox
             // 
-            resources.ApplyResources(BattleLogMainDragonName, "BattleLogMainDragonName");
-            BattleLogMainDragonName.Name = "BattleLogMainDragonName";
+            ActionPicBox.BackColor = Color.Transparent;
+            resources.ApplyResources(ActionPicBox, "ActionPicBox");
+            ActionPicBox.Name = "ActionPicBox";
+            ActionPicBox.TabStop = false;
             // 
-            // BattleLogMainHP
+            // timer1
             // 
-            resources.ApplyResources(BattleLogMainHP, "BattleLogMainHP");
-            BattleLogMainHP.Name = "BattleLogMainHP";
+            timer1.Tick += timer1_Tick;
             // 
             // BattleForm
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.GradientActiveCaption;
-            Controls.Add(BattleLogMainHP);
-            Controls.Add(BattleLogMainDragonName);
-            Controls.Add(BattleLogMainName);
-            Controls.Add(OpponentGroupBox1);
+            BackColor = SystemColors.Info;
+            Controls.Add(ActionPicBox);
+            Controls.Add(CurrentPlayerLabelOne);
+            Controls.Add(OpponentLabelOne);
+            Controls.Add(OpponentHPLabel);
+            Controls.Add(OpponentDragonType);
+            Controls.Add(DragonType1);
+            Controls.Add(OpponentDragonLabel);
             Controls.Add(BattleLogGroupBox);
+            Controls.Add(OpponentNameLabel);
             Controls.Add(BlockButton1);
-            Controls.Add(SpecialAttackButton1);
             Controls.Add(AttackButton1);
+            Controls.Add(SpecialAttackButton1);
             Controls.Add(DragonHPLabel1);
             Controls.Add(DragonNameLabel);
             Controls.Add(PlayerNameLabel);
+            Controls.Add(pictureBoxBackground);
             Name = "BattleForm";
             Load += BattleForm_Load;
             BattleLogGroupBox.ResumeLayout(false);
             BattleLogGroupBox.PerformLayout();
-            OpponentGroupBox1.ResumeLayout(false);
-            OpponentGroupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxBackground).EndInit();
+            ((System.ComponentModel.ISupportInitialize)ActionPicBox).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -197,12 +228,12 @@
         private Label OpponentNameLabel;
         private Label OpponentDragonLabel;
         private Label OpponentHPLabel;
-        private GroupBox OpponentGroupBox1;
-        private TextBox BattleLogOppHP;
-        private TextBox BattleLogOppDragonName;
-        private TextBox BattleLogOppName;
-        private TextBox BattleLogMainName;
-        private TextBox BattleLogMainDragonName;
-        private TextBox BattleLogMainHP;
+        private Label OpponentDragonType;
+        private Label DragonType1;
+        private PictureBox pictureBoxBackground;
+        private Label OpponentLabelOne;
+        private Label CurrentPlayerLabelOne;
+        private PictureBox ActionPicBox;
+        private System.Windows.Forms.Timer timer1;
     }
 }
