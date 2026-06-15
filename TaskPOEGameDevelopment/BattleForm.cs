@@ -12,6 +12,10 @@ namespace TaskPOEGameDevelopment
         int currentPlayer;
         bool P1Blocking = false;
         bool P2Blocking = false;
+        bool P1UsedSpecial = false;
+        bool P2UsedSpecial = false;
+        Button RestButton;
+        int turnsThisRound = 0;
 
         public BattleForm()
         {
@@ -116,20 +120,60 @@ namespace TaskPOEGameDevelopment
             timer1.Interval = 1500;
             ActionPicBox.Visible = false;
 
+            RestButton = new Button();
+            RestButton.Text = "Rest";
+            RestButton.Size = AttackButton1.Size;
+            RestButton.Location = AttackButton1.Location;
+            RestButton.Visible = false;
+            RestButton.Click += RestButton_Click;
+            RestButton.Parent = pictureBoxBackground;
+            pictureBoxBackground.Controls.Add(RestButton);
+
+        }
+        private void RestButton_Click(object sender, EventArgs e) //Creates Rest button object
+        {
+            Rest(currentPlayer);
         }
 
-        private void switchPlayer() // Switches the current player and refreshes the form
-
+        private void updateButtonVisibility()// Hides the attack button and shows the rest button if the player has used their special attackm otherwise does the opposite
         {
-            if (currentPlayer == 1)
+            bool mustRest = (currentPlayer == 1 && P1UsedSpecial) || (currentPlayer == 2 && P2UsedSpecial);
+
+            AttackButton1.Visible = !mustRest;
+            SpecialAttackButton1.Visible = !mustRest;
+            BlockButton1.Visible = !mustRest;
+            RestButton.Visible = mustRest;
+        }
+        
+
+        private void switchPlayer() // Switches the current player and refreshes the form
+        {
+            if (!AttackButton1.Enabled && !RestButton.Visible)
+                return;
+
+            turnsThisRound++;
+
+            if(turnsThisRound >= 2)
             {
-                currentPlayer = 2;
+                turnsThisRound = 0;
+                currentPlayer = takeInitiative();
+                BattleLogTextBox.Text += $"\n--- New Round! {(currentPlayer == 1 ? P1data[0] : P2data[0])} wins initiative! ---\r\n";
+                BattleLogTextBox.Text += "***************************\r\n";
             }
             else
+
             {
-                currentPlayer = 1;
+                if (currentPlayer == 1)
+                {
+                    currentPlayer = 2;
+                }
+                else
+                {
+                    currentPlayer = 1;
+                }
+                setupTurnBase(currentPlayer);
+                updateButtonVisibility();
             }
-            setupTurnBase(currentPlayer);
         }
 
         private void Block()
@@ -221,6 +265,7 @@ namespace TaskPOEGameDevelopment
 
                 }
                 P2Values[0] -= damage;
+                P1UsedSpecial = true;
                 BattleLogTextBox.Text += $"\n{P1data[0]} uses their special attack for {damage} damage!\r\n";
                 BattleLogTextBox.Text += "***************************\r\n";
             }
@@ -235,6 +280,7 @@ namespace TaskPOEGameDevelopment
 
                 }
                 P1Values[0] -= damage;
+                P2UsedSpecial = true;
                 BattleLogTextBox.Text += $"\n{P2data[0]} uses their special attack for {damage} damage!\r\n";
                 BattleLogTextBox.Text += "***************************\r\n";
             }
@@ -254,6 +300,28 @@ namespace TaskPOEGameDevelopment
             AttackButton1.Enabled = false;
             SpecialAttackButton1.Enabled = false;
             BlockButton1.Enabled = false;
+        }
+
+        private void Rest(int player)// Help the program read if the player has used their specail attack and needs to rest
+        {
+            if (player == 1)
+            {
+                P1UsedSpecial = false;
+                P1Blocking = false;
+                BattleLogTextBox.Text += $"\n{P1data[2]} used a special attack and needs some time to rest.\r\n";
+                BattleLogTextBox.Text += "***************************\r\n";
+            }
+            else
+            {
+                P2UsedSpecial = false;
+                P2Blocking = false;
+                BattleLogTextBox.Text += $"\n{P2data[2]} used a special attack and needs some time to rest.\r\n";
+                BattleLogTextBox.Text += "***************************\r\n";
+            }
+            BattleLogTextBox.SelectionStart = BattleLogTextBox.Text.Length;
+            BattleLogTextBox.Focus();
+            BattleLogTextBox.ScrollToCaret();
+            switchPlayer();
         }
 
         // Checks if either player has run out of HP
